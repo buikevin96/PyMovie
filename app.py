@@ -9,11 +9,11 @@
 Tasks:
 []: Decide where to store movies
 []: What is the format of a movie?
-[]: Show the user the main interface and get their input
+[x]: Show the user the main interface and get their input
 []: Allow users to add movies
 []: Show all their movies
 []: Find a movie
-[]: Stop running the program when they type 'q'
+[x]: Stop running the program when they type 'q'
 """
 
 def menu():
