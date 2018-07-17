@@ -16,6 +16,15 @@ Tasks:
 [x]: Stop running the program when they type 'q'
 """
 
+movies = []
+
+"""
+movie = {
+    'name': ... (str),
+    'director': ... (str),
+    'year': ... (int)
+"""
+
 def menu():
     user_input = input("Enter 'a' to add a movie, 'l' to see your movies, 'f' to find a movie, and 'q' to quit: ")
 
@@ -37,5 +46,6 @@ def menu():
 
         user_input = input("Enter 'a' to add a movie, 'l' to see your movies, 'f' to find a movie, and 'q' to quit: ")
 
+def add_movie():gi
 
 menu()
