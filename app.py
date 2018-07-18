@@ -46,6 +46,6 @@ def menu():
 
         user_input = input("Enter 'a' to add a movie, 'l' to see your movies, 'f' to find a movie, and 'q' to quit: ")
 
-def add_movie():gi
+def add_movie():
 
 menu()
