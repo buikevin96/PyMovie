@@ -47,5 +47,21 @@ def menu():
         user_input = input("Enter 'a' to add a movie, 'l' to see your movies, 'f' to find a movie, and 'q' to quit: ")
 
 def add_movie():
+    name = input("Enter the movie name: ")
+    director = input("Enter the movie director: ")
+    year = int(input("Enter the movie release year: "))
+
+    movies.append({
+        'name': name,
+        'director': director,
+        'year': year
+    })
+
+def show_movies():
+
+def find_movie():
+
 
 menu()
+
+print(movies)
