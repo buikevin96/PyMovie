@@ -26,7 +26,7 @@ movie = {
 """
 
 def menu():
-    user_input = input("Enter 'a' to add a movie, 'l' to see your movies, 'f' to find a movie, and 'q' to quit: ")
+    user_input = input("\nEnter 'a' to add a movie, 'l' to see your movies, 'f' to find a movie, and 'q' to quit: ")
 
     if user_input == 'q':
         print("Exiting The program...")
@@ -44,7 +44,7 @@ def menu():
 #       elif user_input == 'q':           //This will not run
 #           print("Stopping Program...")  //This will not run
 
-        user_input = input("Enter 'a' to add a movie, 'l' to see your movies, 'f' to find a movie, and 'q' to quit: ")
+        user_input = input("\nEnter 'a' to add a movie, 'l' to see your movies, 'f' to find a movie, and 'q' to quit: ")
 
 def add_movie():
     name = input("Enter the movie name: ")
@@ -58,10 +58,16 @@ def add_movie():
     })
 
 def show_movies():
+    for movie in movies:
+        print(f"Name: {movie['name']}")
+        print(f"Director: {movie['director']}")
+        print(f"Release Year: {movie['year']}")
 
-def find_movie():
+def show_movie_details(movie):
+
+#def find_movie():
 
 
 menu()
 
-print(movies)
+#print(movies)
