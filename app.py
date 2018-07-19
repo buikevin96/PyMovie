@@ -7,10 +7,10 @@
 - Stop running the program
 
 Tasks:
-[]: Decide where to store movies
-[]: What is the format of a movie?
+[x]: Decide where to store movies
+[x]: What is the format of a movie?
 [x]: Show the user the main interface and get their input
-[]: Allow users to add movies
+[x]: Allow users to add movies
 []: Show all their movies
 []: Find a movie
 [x]: Stop running the program when they type 'q'
@@ -59,11 +59,12 @@ def add_movie():
 
 def show_movies():
     for movie in movies:
-        print(f"Name: {movie['name']}")
-        print(f"Director: {movie['director']}")
-        print(f"Release Year: {movie['year']}")
+        show_movie_details(movie)
 
 def show_movie_details(movie):
+    print(f"Name: {movie['name']}")
+    print(f"Director: {movie['director']}")
+    print(f"Release Year: {movie['year']}")
 
 #def find_movie():
 
