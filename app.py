@@ -63,8 +63,20 @@ def show_movie_details(movie):
     print(f"Release Year: {movie['year']}")
 
 def find_movie():
-    find_by = input("What property of the movie are you looking for?: ")
+    find_by = input("What property of the movie are you looking for?: ") # One of year, name, or director
     looking_for = input("What are you searching for?: ")
+
+    found_movies = find_by_attribute(movies, looking_for, lambda x: x[find_by])
+
+def find_by_attribute(items, expected, finder):
+    found = []
+
+    for i in items:
+        if finder(i) == expected:
+            found.append(i)
+
+    return found
+
 
 menu()
 
