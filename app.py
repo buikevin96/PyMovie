@@ -28,10 +28,6 @@ movie = {
 def menu():
     user_input = input("\nEnter 'a' to add a movie, 'l' to see your movies, 'f' to find a movie, and 'q' to quit: ")
 
-    if user_input == 'q':
-        print("Exiting The program...")
-        quit_movie()
-
     while user_input != 'q':
         if user_input == 'a':
             add_movie()
@@ -66,8 +62,9 @@ def show_movie_details(movie):
     print(f"Director: {movie['director']}")
     print(f"Release Year: {movie['year']}")
 
-#def find_movie():
-
+def find_movie():
+    find_by = input("What property of the movie are you looking for?: ")
+    looking_for = input("What are you searching for?: ")
 
 menu()
 
